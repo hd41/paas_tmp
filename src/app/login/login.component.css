@@ -1,0 +1,22 @@
+h1, h5{
+  text-align: center;
+}
+
+.loginComp{
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 1px solid grey;
+  padding: 20px;
+  min-height: 50%;
+}
+.login-div{
+  float: none;
+}
+.loginForm{
+  padding-bottom: 50px;
+}
+.login-btn{
+  float: right;
+  margin-bottom: 50px;
+}

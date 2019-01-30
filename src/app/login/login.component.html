@@ -1,0 +1,27 @@
+<div class="loginComp">
+  <h1>Login Form</h1>
+  <form class="loginForm" #valForm="ngForm" (ngSubmit)="login(valForm.value); valForm.reset();" >
+
+    <label for="username">Username:</label><br>
+    <input class='form-control'
+    type="text"
+    name="username"
+    ngModel
+    placeholder="Enter username"
+    maxlength="30"
+    #username="ngModel"
+    required><br>
+
+    <label for="password">Password:</label><br>
+    <input class='form-control'
+    type="password"
+    name="password"
+    ngModel
+    placeholder="Enter password"
+    maxlength="30"
+    #password="ngModel"
+    required><br>
+    <h5 [style.display]="hideElement?'none':'inherit'">Invalid Credentials</h5>
+    <input class="btn btn-primary login-btn" type="submit" name="" value="Login">
+  </form>
+</div>
