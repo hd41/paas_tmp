@@ -7,6 +7,11 @@
       <td>{{ log.log_name }}</td>
     </tr>
   </table>
+
+  <div class="row">
+    <button type="button" name="button"  #pageq *ngFor="let page of pages" (click)="getDataOnthisPage(pageq)">{{ page.number }}</button>
+  </div>
+
 </div>
 
 <!-- *ngIf="(logs$ | async).length" -->
